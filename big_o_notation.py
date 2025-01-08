@@ -12,10 +12,11 @@
 def sum_char_codes_linear(n: str) -> int:
     sum: int = 0
 
-    for i in range(len(str)):
-        sum += ord(str[i])
+    for i in range(len(n)):
+        sum += ord(n[i])
 
     return sum
+
 
 # Example: This function is still O(n) time complexity and not O(2n) even with
 # the two for loops. Constants are dropped, since Big O is meant to describe
@@ -26,13 +27,14 @@ def sum_char_codes_linear(n: str) -> int:
 def sum_char_codes_still_linear(n: str) -> int:
     sum: int = 0
 
-    for i in range(len(str)):
-        sum += ord(str[i])
+    for i in range(len(n)):
+        sum += ord(n[i])
 
-    for i in range(len(str)):
-        sum += ord(str[i])
+    for i in range(len(n)):
+        sum += ord(n[i])
 
     return sum
+
 
 # Example: This function is STILL O(n) time complexity even with the if block
 # potentially resulting in an early return. In Big O, the worst case is often
@@ -44,15 +46,16 @@ def sum_char_codes_still_linear(n: str) -> int:
 def sum_char_codes_worst_case_linear(n: str) -> int:
     sum = 0
 
-    for i in range(len(str)):
-        charCode = ord(str[i])
+    for i in range(len(n)):
+        charCode = ord(n[i])
 
         if charCode == 69:
             return sum
 
-        sum += ord(str[i])
+        sum += ord(n[i])
 
     return sum
+
 
 # Summary:
 # - Growth is with respect to the input for the algorithm
@@ -62,8 +65,9 @@ def sum_char_codes_worst_case_linear(n: str) -> int:
 
 # Common Complexities:
 # - O(1): Constant Time
-def sum_char_codes_constant(n: str) -> int:
-    return 0
+def sum_char_codes_constant(n: str) -> str:
+    return n
+
 
 # - O(log n): Logarithmic Time
 # (For every iteration, half the input to search, look at one value at a time)
@@ -75,10 +79,11 @@ def sum_char_codes_constant(n: str) -> int:
 def sum_char_codes_linear_(n: str) -> int:
     sum = 0
 
-    for i in range(len(str)):
-        sum += ord(str[i])
+    for i in range(len(n)):
+        sum += ord(n[i])
 
     return sum
+
 
 # - O(n log n): "Linearithmic" time
 # (For every iteration, half the input to search, search the halve n times)
@@ -89,9 +94,9 @@ def sum_char_codes_linear_(n: str) -> int:
 def sum_char_codes_quadratic(n: str) -> int:
     sum = 0
 
-    for i in range(len(str)):
-        for i in range(len(str)):
-            sum += ord(str[i])
+    for i in range(len(n)):
+        for i in range(len(n)):
+            sum += ord(n[i])
 
     return sum
 
@@ -100,12 +105,13 @@ def sum_char_codes_quadratic(n: str) -> int:
 def sum_char_codes_cubic(n: str) -> int:
     sum = 0
 
-    for i in range(len(str)):
-        for i in range(len(str)):
-            for i in range(len(str)):
-                sum += ord(str[i])
+    for i in range(len(n)):
+        for i in range(len(n)):
+            for i in range(len(n)):
+                sum += ord(n[i])
 
     return sum
+
 
 # - O(2^n): Exponential Time
 # --- Subset Sum Problem

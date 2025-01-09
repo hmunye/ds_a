@@ -1,3 +1,4 @@
+# Time Complexity: O(n)
 def linear_search(haystack: list[int], needle: int) -> bool:
     for elem in haystack:
         if elem == needle:

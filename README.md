@@ -6,3 +6,4 @@
 - [x] `Binary Search`
 - [x] `Two Crystal Balls Problem`
 - [x] `Bubble Sort`
+- [x] `Singly Linked List`

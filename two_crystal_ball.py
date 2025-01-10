@@ -42,6 +42,7 @@ def two_crystal_balls(breaks: list[bool]) -> int:
     # Keep track of how many units jumped
     step = jmp_unit
 
+    # Starting at 0, up to length, stepping `jmp_unit`s at a time
     for i in range(0, length, jmp_unit):
         # Found our first break
         if breaks[i]:
@@ -50,6 +51,7 @@ def two_crystal_balls(breaks: list[bool]) -> int:
         step += jmp_unit
 
     # Walk one unit back to determine the first break
+    # Linearly walk forward at most sqrt(n)
     for i in range(step - jmp_unit, min(step, length)):
         if breaks[i]:
             # Index of first break

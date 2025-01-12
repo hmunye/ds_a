@@ -8,3 +8,4 @@
 - [x] `Bubble Sort`
 - [x] `Singly Linked List`
 - [x] `Queue`
+- [x] `Stack`

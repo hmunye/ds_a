@@ -9,3 +9,5 @@
 - [x] `Singly Linked List`
 - [x] `Queue`
 - [x] `Stack`
+- [x] `Recursion`
+- [x] `Path-Finding`

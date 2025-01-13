@@ -1,7 +1,3 @@
-# Time Complexity: O()
-
-# Maze Solver
-
 # The maze is represented as a list of strings where each string contains
 # characters such as walls (denoted by pound signs) and the starting and ending
 # points of the maze. The goal is to navigate from the start to the end while
@@ -99,3 +95,16 @@ end = Point(5, 4)
 path = maze_solver(maze, "#", start, end)
 
 print(path)
+
+# The algorithm begins at a point (like x0) and attempts to move in different
+# directions (up, right, down, left). If it hits a wall or revisits a position,
+# it backtracks by removing the current position from the stack and tries another
+# direction. This process continues recursively, marking each visited position as
+# "true" in a seen array. When a dead-end is encountered, the algorithm pops
+# the current position off the stack and returns to the previous position,
+# checking other directions until it either finds the exit or exhausts all possible
+# paths. The order in which the directions are explored doesn’t impact performance
+# significantly, as the algorithm will eventually explore all paths. The time
+# complexity is linear, O(N), because each square in the maze is checked up to
+# four times, corresponding to the four possible directions, where N is the total
+# number of squares

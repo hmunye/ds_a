@@ -1,20 +1,20 @@
 function binary_search(haystack: number[], needle: number): boolean {
-    let start = 0;
-    let end = haystack.length;
+    let lo = 0;
+    let hi = haystack.length;
 
-    while (start < end) {
-        const mid = Math.floor((start + end) / 2);
+    while (lo < hi) {
+        const mid = Math.floor(lo + (hi - lo) / 2);
 
         if (haystack[mid] === needle) {
             return true;
         }
 
         if (haystack[mid] < needle) {
-            start = mid + 1;
+            lo = mid + 1;
         }
 
         if (haystack[mid] > needle) {
-            end = mid;
+            hi = mid;
         }
     }
 
@@ -29,4 +29,4 @@ console.log(binary_search(list, 22));
 console.log(binary_search(list, 0));
 console.log(binary_search(list, -5));
 console.log(binary_search([], 14));
-console.log(binary_search(list, 0));
+console.log(binary_search(list, 430));

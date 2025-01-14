@@ -14,4 +14,4 @@ const unsorted_arr = [0, 44, 30, 2, 1, 50, 4, 17, 7];
 
 bubble_sort(unsorted_arr);
 
-console.log(unsorted_arr)
+console.log(unsorted_arr);

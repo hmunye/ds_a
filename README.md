@@ -11,3 +11,4 @@
 - [x] `Stack`
 - [x] `Recursion`
 - [x] `Path-Finding`
+- [x] `Quick Sort`

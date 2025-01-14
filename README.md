@@ -12,3 +12,4 @@
 - [x] `Recursion`
 - [x] `Path-Finding`
 - [x] `Quick Sort`
+- [x] `Doubly Linked List`

@@ -17,17 +17,19 @@ int main(void) {
     int unsorted_arr[] = {0, 4, 2, 50, 14, 44, 30, 12, 7, 2};
     size_t size = sizeof(unsorted_arr) / sizeof(*unsorted_arr);
 
-    printf("[");
+    printf("[ ");
     for (size_t i = 0; i < size; ++i) {
-        printf("%d,", unsorted_arr[i]);
+        printf("%d ", unsorted_arr[i]);
     }
     printf("]\n");
 
     bubble_sort(unsorted_arr, size);
 
-    printf("[");
+    printf("\n");
+
+    printf("[ ");
     for (size_t i = 0; i < size; ++i) {
-        printf("%d,", unsorted_arr[i]);
+        printf("%d ", unsorted_arr[i]);
     }
     printf("]\n");
 
